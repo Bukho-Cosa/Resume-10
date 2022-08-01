@@ -1,0 +1,207 @@
+
+        body{
+            background-color: burlywood !important;
+    }
+        div{
+            margin:30px !important;
+            color: white !important;
+            background-color: darkgray !important;
+            font-family: "Courier New" !important;
+            border-radius: 6% !important;
+        }
+        /*for some reason the header isn't working*/
+
+
+       /* .container{
+            background-image: url("images/background.jpg") !important;
+            background-repeat: no-repeat !important;
+            border-style: solid !important;
+            padding: 5px !important;
+           /* display: grid;
+            grid-template-columns: 1fr 1fr 1fr;*/
+        }
+        /*.row{
+            background-image: url("images/background.jpg") !important;
+            background-repeat: no-repeat !important;
+        }
+        .col-sm-7{
+            background-image: url("images/background.jpg") !important;
+            background-repeat: no-repeat !important;
+        }
+        .col-sm-3{
+            background-image: url("images/background.jpg") !important;
+            background-repeat: no-repeat !important;
+        }*/
+        
+        
+        .facePict{
+            /*grid-column-start: 3;*/
+            display: block;
+            margin-left: auto;
+            margin-right: auto;
+            border-radius: 6%;
+            border: 5px solid burlywood;
+        }
+        .name{
+           /* grid-column-start: 1;
+           grid-column-end: 2;*/
+            text-align: center;
+            padding-top: 2rem;
+        }
+        .subTitle{
+            /*grid-column-start: 1;
+            grid-column-end: 2;*/
+            display: inline-block;
+            width:50%;
+            padding-top: 0.5rem;
+            padding-right: 2rem;
+        }
+        .location{
+            /*grid-column-start: 2;
+            grid-column-end: 2;*/
+            display: inline-flex;
+            text-align: right;
+            padding-top: 0.5rem;
+        }
+        
+        .closingStatement{
+            /*grid-column-start: 1;
+            grid-column-end: 2;*/
+            text-align: center;
+            padding-top: 1rem;
+            padding-bottom: 2rem;
+        }
+        
+        
+        
+        .menuDiv{
+            padding-bottom: 2.5rem;
+            border: 5px solid burlywood;
+            justify-content: center;
+            vertical-align: middle;
+            text-align: center;
+        }
+        .menu{
+            display: inline; /* the default for span */
+            width: 100px;
+            height: 100px;
+            padding: 5px;
+            text-align: center;
+            justify-content: center;
+        }
+        .educationMenu{
+            padding: 1rem;
+            text-decoration: none;
+        }
+        .experienceMenu{
+            padding: 1rem;
+            text-decoration: none; 
+        }
+        .skillsMenu{
+            padding: 1rem;
+            text-decoration: none;
+        }
+        .contactsMenu{
+            padding: 1rem;
+            text-decoration: none;
+        }
+
+        
+        .body{
+            border-style: solid;
+            padding: 5px;
+        }
+        /* I truly struggled to amke these individual inline structures so I put them in a table*/
+        .education{
+            align-items: flex-start;
+            display: inline-block;
+            width:65%;
+        }
+        .experience{
+            align-items: flex-start;
+            display: inline-block;
+            width:75%;
+        }
+        .funThings{
+            align-items: flex-end;
+            display: inline;
+            width:25%;
+            justify-content: right;
+            vertical-align: top;
+            text-align: right;
+            justify-content: right;
+        }
+
+        .soloPic{
+            align-content: center;
+            justify-content: center;
+            object-fit: contain;
+            vertical-align: middle;
+            margin: 2rem;
+            align-items: center;
+        }
+        
+        
+        
+        
+        .footer{
+            border-style: solid;
+            padding: 5px;
+            border: 5px solid burlywood;
+        }
+        .contactHeading{
+            text-align: center;
+        }
+        .image{
+            display: inline-block;
+            margin-left: auto;
+            margin-right: auto;
+            padding-left: 10%;
+        }
+        .link{
+            display: center;
+        }
+        .image1{
+            display: inline-block;
+            margin-left: auto;
+            margin-right: auto;
+            border-radius: 50%;
+            padding-top: 1rem;
+            padding-left: 10%;
+        }
+        .phoneNumber{
+            display: inline-block;
+        }
+
+        .header, .body{
+            background-image:url(images/background.jpg);
+            background-repeat:repeat-x;
+        }
+
+        @media only screen and (max-width: 600px) {
+            body {text-align: center ;}
+            .facePict{
+                width: 150px;
+                height: 200px;
+            }
+         } 
+         
+         
+         @media only screen and (min-width: 768px) {
+            .facePict{
+                width: 250px;
+                height: 300px;
+            }
+         } 
+         
+        @media only screen and (min-width: 992px) {
+            h1 {font-size: 30px;}
+            h2 {font-size: 25px;}
+            h3 {font-size: 20px;}
+            p {font-size: 18px;}
+         } 
+         
+         /* Extra large devices (large laptops and desktops, 1200px and up) 
+         @media only screen and (min-width: 1200px) {
+            body { ; }
+         }*/
