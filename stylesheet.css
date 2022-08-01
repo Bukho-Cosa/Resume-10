@@ -10,28 +10,6 @@
             border-radius: 6% !important;
         }
         /*for some reason the header isn't working*/
-
-
-       /* .container{
-            background-image: url("images/background.jpg") !important;
-            background-repeat: no-repeat !important;
-            border-style: solid !important;
-            padding: 5px !important;
-           /* display: grid;
-            grid-template-columns: 1fr 1fr 1fr;*/
-        }
-        /*.row{
-            background-image: url("images/background.jpg") !important;
-            background-repeat: no-repeat !important;
-        }
-        .col-sm-7{
-            background-image: url("images/background.jpg") !important;
-            background-repeat: no-repeat !important;
-        }
-        .col-sm-3{
-            background-image: url("images/background.jpg") !important;
-            background-repeat: no-repeat !important;
-        }*/
         
         
         .facePict{
@@ -43,67 +21,30 @@
             border: 5px solid burlywood;
         }
         .name{
-           /* grid-column-start: 1;
-           grid-column-end: 2;*/
             text-align: center;
             padding-top: 2rem;
         }
         .subTitle{
-            /*grid-column-start: 1;
-            grid-column-end: 2;*/
             display: inline-block;
             width:50%;
             padding-top: 0.5rem;
             padding-right: 2rem;
         }
         .location{
-            /*grid-column-start: 2;
-            grid-column-end: 2;*/
             display: inline-flex;
             text-align: right;
             padding-top: 0.5rem;
         }
         
         .closingStatement{
-            /*grid-column-start: 1;
-            grid-column-end: 2;*/
             text-align: center;
             padding-top: 1rem;
             padding-bottom: 2rem;
         }
         
         
-        
-        .menuDiv{
-            padding-bottom: 2.5rem;
+        .container-fluid{
             border: 5px solid burlywood;
-            justify-content: center;
-            vertical-align: middle;
-            text-align: center;
-        }
-        .menu{
-            display: inline; /* the default for span */
-            width: 100px;
-            height: 100px;
-            padding: 5px;
-            text-align: center;
-            justify-content: center;
-        }
-        .educationMenu{
-            padding: 1rem;
-            text-decoration: none;
-        }
-        .experienceMenu{
-            padding: 1rem;
-            text-decoration: none; 
-        }
-        .skillsMenu{
-            padding: 1rem;
-            text-decoration: none;
-        }
-        .contactsMenu{
-            padding: 1rem;
-            text-decoration: none;
         }
 
         
@@ -152,22 +93,8 @@
         .contactHeading{
             text-align: center;
         }
-        .image{
-            display: inline-block;
-            margin-left: auto;
-            margin-right: auto;
-            padding-left: 10%;
-        }
         .link{
             display: center;
-        }
-        .image1{
-            display: inline-block;
-            margin-left: auto;
-            margin-right: auto;
-            border-radius: 50%;
-            padding-top: 1rem;
-            padding-left: 10%;
         }
         .phoneNumber{
             display: inline-block;

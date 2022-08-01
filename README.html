@@ -4,8 +4,8 @@
 <head>
     <title> Bukho's Resumé </title>
     <link rel="stylesheet" type="text/css" href="stylesheet.css">
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
-        integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 </head>
 
@@ -26,19 +26,43 @@
         </div>
     </div>
 
-    <div class="menuDiv">
-        <section class="menu">
-            <h2> Menu </h2>
-            <a class="educationMenu" href="#education"> Education </a>
-            <a class="experienceMenu" href="#experience"> Experience </a>
-            <a class="skillsMenu" href="#skills"> Skills </a>
-            <a class="contactsMenu" href="#contactHeading"> Contact Details </a>
-        </section>
-    </div>
+    <nav class="navbar navbar-expand-lg navbar-light bg-light">
+        <div class="container-fluid">
+            <a class="navbar-brand" href="#">Menu</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false"
+                aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                    <li class="nav-item">
+                        <a class="nav-link active" aria-current="page" href="#body">Home</a>
+                    </li>
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button"
+                            data-bs-toggle="dropdown" aria-expanded="false">
+                            Dropdown
+                        </a>
+                        <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                            <li><a class="dropdown-item" href="#education">Education</a></li>
+                            <li><a class="dropdown-item" href="#experience">Experience</a></li>
+                            <li><a class="dropdown-item" href="#skills">Skills</a></li>
+                            <li><a class="dropdown-item" href="#contactHeading">Contact Details</a></li>
+                        </ul>
+                    </li>
+                </ul>
+                <form class="d-flex">
+                    <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
+                    <button class="btn btn-outline-success" type="submit">Search</button>
+                </form>
+            </div>
+        </div>
+    </nav>
 
     <div class="body">
         <section class="Education">
-            <h2 id="education"><ins> Education </ins></h2>
+            <h2 id="education" class="h2"><ins> Education </ins></h2>
             <section>
                 <h3> Web Design at CodeSpace</h3>
                 <p> Web Design</p>
@@ -50,7 +74,7 @@
         </section>
 
         <aside class="funThings">
-            <h2 id="skills"><ins> Skills</ins></h2>
+            <h2 id="skills" class="h2"><ins> Skills</ins></h2>
             <ul>
                 <li>CSS</li>
                 <li>HTML 5</li>
@@ -59,7 +83,7 @@
         </aside>
 
         <section class="Experience">
-            <h2 id="experience"><ins> Experience </ins></h2>
+            <h2 id="experience" class="h2"><ins> Experience </ins></h2>
             <section>
                 <h3> Most Recent</h3>
                 <p> Resume 7</p>
@@ -75,21 +99,37 @@
         <!-- a line you will never see **queue evil laugh-->
     </div>
 
-    <picture class="soloPic">
-        <source media="(max-width: 650px)" srcset="images/2021-05-02-10-40-46-387.small.jpg">
-        <source media="(max-width: 1000px)" srcset="images/2021-05-02-10-40-46-387.med.jpg">
-        <img src="images/2021-05-02-10-40-46-387.jpg" alt="Bukho_sat_down">
-    </picture>
+    <div id="carouselExampleInterval" class="carousel slide" data-bs-ride="carousel">
+        <div class="carousel-inner">
+          <div class="carousel-item active" data-bs-interval="10000">
+            <img src="images/2021-05-02-10-40-46-387.jpg" class=" mx-auto d-block w-50" alt="Bukho_sat_down">
+          </div>
+          <div class="carousel-item" data-bs-interval="2000">
+            <img src="images/IMG-20210423-WA0108.jpg" class="mx-auto d-block w-50" alt="Bukho_outside">
+          </div>
+          <div class="carousel-item">
+            <img src="images/2021-06-12-10-47-10-906.jpg" class="mx-auto d-block w-50" alt="Bukho_face_pict">
+          </div>
+        </div>
+        <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleInterval" data-bs-slide="prev">
+          <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+          <span class="visually-hidden">Previous</span>
+        </button>
+        <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleInterval" data-bs-slide="next">
+          <span class="carousel-control-next-icon" aria-hidden="true"></span>
+          <span class="visually-hidden">Next</span>
+        </button>
+      </div>
 
 
 
     <div class="footer">
         <section>
             <footer>
-                <h2 class="contactHeading"><ins> My contact details </ins></h2>
-                <img class="image" src="images/Gmail-logo.png" alt="gmail symbol" width="40px" ; height="20px">
+                <h2 class="contactHeading" class="h2"><ins> My contact details </ins></h2>
+                <img class="img-fluid" src="images/Gmail-logo.png" alt="gmail symbol" width="40px" ; height="20px">
                 <a class="link" href="mailto: bukhosibscosa@gmail.com" target="_blank"> bukhosibscosa@gmail.com </a>
-                <img class="image1" src="images/call.jpg" alt="phone number" width="40px" ; height="20px">
+                <img class="img-fluid" src="images/call.jpg" alt="phone number" width="40px" ; height="20px">
                 <p class="phoneNumber"><ins><a href="tel:0682458716">+27 68 245 8716</a></ins></p>
             </footer>
         </section>
