@@ -1,5 +1,5 @@
 body {
-    background-color: burlywood !important;
+    background-color: rgba(191,127,63,0.3) !important;
 }
 
 div {
@@ -19,42 +19,47 @@ div {
     margin-left: auto;
     margin-right: auto;
     border-radius: 6%;
-    border: 5px solid burlywood;
+    background-color: rgba(191,127,63,0.3);
+    border: 5px solid ;
 }
 
 .name {
     text-align: center;
     padding-top: 2rem;
+    color: black;
 }
 
 .subTitle {
     display: inline-block;
-    width: 50%;
     padding-top: 0.5rem;
     padding-right: 2rem;
+    color: black;
 }
 
 .location {
     display: inline-flex;
     text-align: right;
-    padding-top: 0.5rem;
+    padding-top: 1rem;
+    color: black;
 }
 
 .closingStatement {
     text-align: center;
-    padding-top: 1rem;
-    padding-bottom: 2rem;
+    padding-top: 3rem;
+    padding-bottom: 0.1rem;
+    color: black;
+    font-size: smaller;
 }
 
 
 .container-fluid {
-    border: 5px solid burlywood;
+    border: 5px solid rgba(191,127,63,0.3);
 }
 
 
 .body {
     border-style: solid;
-    padding: 5px;
+    padding: 2rem;
 }
 
 /* I truly struggled to amke these individual inline structures so I put them in a table*/
@@ -95,7 +100,12 @@ div {
 .footer {
     border-style: solid;
     padding: 5px;
-    border: 5px solid burlywood;
+    border: 5px solid rgba(191,127,63,0.3);
+    justify-content: center;
+    background-image: url(images/IMG_MIRROR_20200726_132017.jpg);
+    background-position-x: center;
+    background-size: 100%;
+    text-align: center;
 }
 
 .contactHeading {
@@ -103,11 +113,12 @@ div {
 }
 
 .link {
-    display: center;
+    display: inline-block;
 }
 
 .phoneNumber {
     display: inline-block;
+    padding-left: 2rem;
 }
 @keyframes animatedSquare {
     0%   {transform: rotate(0deg);}
@@ -122,10 +133,11 @@ div {
     margin: 2rem;
 }
 
-.header,
+
 .body {
-    background-image: url(images/background.jpg);
-    background-repeat: repeat-x;
+    background-image: url(images/IMG_MIRROR_20200726_132017.jpg);
+    background-position-x: center;
+    background-size: 100%;
 }
 
 @media only screen and (max-width: 600px) {
