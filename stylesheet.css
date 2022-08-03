@@ -1,5 +1,5 @@
 body {
-    background-color: rgba(191,127,63,0.3) !important;
+    background-color: rgba(191, 127, 63, 0.3) !important;
 }
 
 div {
@@ -19,8 +19,8 @@ div {
     margin-left: auto;
     margin-right: auto;
     border-radius: 6%;
-    background-color: rgba(191,127,63,0.3);
-    border: 5px solid ;
+    background-color: rgba(191, 127, 63, 0.3);
+    border: 5px solid;
 }
 
 .name {
@@ -53,7 +53,7 @@ div {
 
 
 .container-fluid {
-    border: 5px solid rgba(191,127,63,0.3);
+    border: 5px solid rgba(191, 127, 63, 0.3);
 }
 
 
@@ -99,8 +99,8 @@ div {
 
 .footer {
     border-style: solid;
-    padding: 5px;
-    border: 5px solid rgba(191,127,63,0.3);
+    padding: 3rem;
+    border: 5px solid rgba(191, 127, 63, 0.3);
     justify-content: center;
     background-image: url(images/IMG_MIRROR_20200726_132017.jpg);
     background-position-x: center;
@@ -120,15 +120,25 @@ div {
     display: inline-block;
     padding-left: 2rem;
 }
+
 @keyframes animatedSquare {
-    0%   {transform: rotate(0deg);}
-    50%  {transform: rotate(-3deg);}
-    100% {transform: rotate(3deg);}
-  }
+    0% {
+        transform: skewY(0rad);
+    }
+
+    50% {
+        transform: skewY(-1rad);
+    }
+
+    100% {
+        transform: skewY(1rad);
+    }
+}
+
 .img-fluid:hover {
     background-color: darkgray;
     animation-name: animatedSquare;
-    animation-duration: 0.2s;
+    animation-duration: 5s;
     animation-iteration-count: infinite;
     margin: 2rem;
 }
