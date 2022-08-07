@@ -5,7 +5,7 @@ body {
 div {
     margin: 30px !important;
     color: white !important;
-    background-color: darkgray !important;
+    background-color: black!important;
     font-family: "Courier New" !important;
     border-radius: 6% !important;
 }
@@ -54,12 +54,24 @@ div {
 
 .container-fluid {
     border: 5px solid rgba(191, 127, 63, 0.3);
+    
+}
+.container-fluid a{
+    color: white !important;
 }
 
 
 .body {
     border-style: solid;
     padding: 2rem;
+    display: flex;
+}
+.body div{
+    width: 100%;
+    padding: 2rem;
+}
+.body h2{
+    text-align: center;
 }
 
 /* I truly struggled to amke these individual inline structures so I put them in a table*/
@@ -79,10 +91,6 @@ div {
     align-items: flex-end;
     display: inline;
     width: 25%;
-    justify-content: right;
-    vertical-align: top;
-    text-align: right;
-    justify-content: right;
 }
 
 .soloPic {
