@@ -146,7 +146,7 @@ div {
 .img-fluid:hover {
     background-color: darkgray;
     animation-name: animatedSquare;
-    animation-duration: 5s;
+    animation-duration: 10s;
     animation-iteration-count: infinite;
     margin: 2rem;
 }
