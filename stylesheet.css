@@ -51,6 +51,10 @@ div {
     font-size: smaller;
 }
 
+.dropdown-item{
+    color: black !important;
+}
+
 
 .container-fluid {
     border: 5px solid rgba(191, 127, 63, 0.3);
